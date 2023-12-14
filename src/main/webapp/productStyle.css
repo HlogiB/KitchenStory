@@ -1,0 +1,74 @@
+/* Create a new CSS file named "VegetablesPage.css" */
+/* Add the following content to "VegetablesPage.css" */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+header {
+   background-color: #3498db;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e; /* Slightly lighter blue for navigation */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Align items at the ends */
+    padding: 0 20px; /* Add padding to the navigation bar */
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transition for background-color */
+}
+
+nav a:hover {
+    background-color: #3e5773; /* Darker blue on hover */
+}
+
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.vegetables-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.vegetable-item {
+    border: 1px solid #e1e1e1; /* Light gray border for each item */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for items */
+    margin-bottom: 20px;
+}
+
+.vegetable-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+.vegetable-item h3 {
+    margin-top: 10px;
+}
+
+footer {
+   background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MainPage.css">
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Orders</a>
+        <a href="#">Products</a>
+        <a href="#">Feedback</a>
+    </nav>
+
+    <div class="main-content">
+        <div class="feedback-section">
+            <h2>Feedback Queries</h2>
+            <!-- Display feedback queries here -->
+            <!-- Example structure: -->
+            <div class="feedback-item">
+                <p>Customer: Lehlogonolo Bale</p>
+                <p>I wanted to take a moment to express my appreciation for the outstanding service and experience I've had with your company. From navigating your user-friendly admin panel to the seamless order management, everything has exceeded my expectations.
+
+The feedback and query sections provide a comprehensive overview, making it easy to address customer concerns promptly. The order management system is efficient, and I can easily track and manage all transactions. The product management section is intuitive, allowing for the smooth addition and deletion of products.
+
+I'm thoroughly impressed with the professionalism and attention to detail demonstrated by your team. Keep up the excellent work!
+
+Best Regards,</p>
+            </div>
+            <div class="feedback-item">
+                <p>Customer: Rendani Magoba</p>
+                <p>I am writing to express my disappointment with the admin panel and overall experience I've had with your company. Unfortunately, my interactions have been less than satisfactory.
+
+The feedback section appears cluttered and lacks organization, making it challenging to address customer queries efficiently. Navigating the orders section has been frustrating, with a lack of clear information and a confusing layout. The product management interface is not user-friendly, and the process of adding or deleting products feels unnecessarily complicated.
+
+I expected a more intuitive and seamless experience, and the current state of the admin panel falls short of industry standards. I hope you can address these issues promptly to improve the user experience for future customers.</p>
+            </div>
+        </div>
+
+        <div class="orders-section">
+            <h2>Orders</h2>
+            <!-- Display orders here -->
+            <!-- Example structure: -->
+            <div class="order-item">
+                <p>Order ID: JH45865</p>
+                <p>Product: <ul><li>Bananas(2kg) x2</li><li>Brown Bread</li><li>Chicken(12 Piece)</li><li>Turkey(@50g)</li><li>Lamp(200g)</li></ul></p>
+                <p>Total Price: R515.00</p>
+            </div>
+            
+        </div>
+
+        <div class="product-management-section">
+            <h2>Product Management</h2>
+            <form action="#" method="post" class="add-product-form">
+                <label for="productId">Product ID:</label>
+                <input type="text" id="productId" name="productId" required>
+
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="productDescription">Product Description:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+
+                <label for="productPrice">Product Price:</label>
+                <input type="text" id="productPrice" name="productPrice" required>
+
+                <label for="productCategory">Product Category:</label>
+                <input type="text" id="productCategory" name="productCategory" required>
+
+                <button type="submit">Add Product</button>
+            </form>
+
+            <form action="#" method="post" class="delete-product-form">
+                <label for="deleteProductId">Product ID to Delete:</label>
+                <input type="text" id="deleteProductId" name="deleteProductId" required>
+
+                <button type="submit">Delete Product</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

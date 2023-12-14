@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchener's Online Store</title>
+    <link rel="stylesheet" href="MainPage.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kitchener's Online Store</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="Product?category=fruits">Fruits</a>
+        <a href="Product?category=vegetables">Vegetables</a>
+        <a href="Product?category=meat">Meat</a>
+        <a href="Product?category=Dairy">Dairy</a>
+        <a href="Product?category=Bakery">Bakery</a>
+       
+        <a href='cart.html'>Go to cart</a>
+        <!-- Search Bar in the Navigation Bar -->
+        <div class="search-bar">
+            <!-- Inside the existing form tag -->
+				<form>
+  <div style="display: flex;">
+    <input type="text" id="search" name="search" placeholder="Search For Product">
+    <button type="submit">Search     </button>
+  </div>
+</form>
+
+
+        </div>
+    </nav>
+
+    <div class="main-content">
+
+        <!-- Registration Section (Left) -->
+        <section class="registration-section">
+            <h2>Register for Updates</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Sale Items Section (Middle) -->
+        <section class="sale-items-section">
+            <h2>Current Items on Sale</h2>
+            <ul>
+                <li style="font-size: 18px; line-height: 1.5; margin-top: 10px;">
+    <img src="/KitchenStory/Images/banana.jpg" alt="Image Description" width="170" height="170">
+    <span style="vertical-align: middle;">Bananas(2kg)- R20</span>
+</li>
+
+             <li style="font-size: 18px; line-height: 1.5; margin-top: 10px;">
+    <img src="/KitchenStory/Images/turkey.jpg" alt="Image Description" width="170" height="170">
+    <span style="vertical-align: middle;">Turkey(250g)- R160</span>
+</li>
+<li style="font-size: 18px; line-height: 1.5; margin-top: 10px;">
+    <img src="/KitchenStory/Images/bread.jpg" alt="Image Description" width="170" height="170">
+    <span style="vertical-align: middle;">Brown Bread - R15</span>
+</li>
+<li style="font-size: 18px; line-height: 1.5; margin-top: 10px;">
+    <img src="/KitchenStory/Images/m4.jpg" alt="Image Description" width="170" height="170">
+    <span style="vertical-align: middle;">Chicken (12 piece) - R100</span>
+</li>
+
+
+                
+            </ul>
+        </section>
+
+        <!-- Feedback/Queries Section (Right) -->
+        <section class="feedback-section">
+            <h2>Feedback / Queries</h2>
+            <form>
+				<label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="feedback">Your Feedback/Query:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer at the Bottom of the Page -->
+    <div class="footer">
+   <footer>
+    &copy; 2023 Kitchener's Online Store. All rights reserved.
+	
+    <!-- Social Media Icons and Links -->
+    <div class="social-icons">
+		Please Follow US On Our Socials<br/><br/>
+        <a href="#" target="_blank"><img src="Images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="Images/twitter-icon.png" alt="Twitter"></a>
+        <a href="#" target="_blank"><img src="Images/instagram-icon.png" alt="Instagram"></a>
+        <!-- Add more social media icons and links as needed -->
+    </div>
+</footer>
+    </div>
+
+</body>
+</html>
